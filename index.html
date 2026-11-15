@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Galeria de trajes da Loja de Folhas de Ouro do Naruto Shinobi Universe.">
+<title>Loja de Folhas de Ouro · Naruto Shinobi Universe</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="catalogo.js" defer></script>
+</head>
+<body id="topo">
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="#topo"><span class="mark" aria-hidden="true">✦</span><span>NARUTO <small>SHINOBI UNIVERSE</small></span></a>
+  <a class="nav" href="#catalogo">Catálogo <span aria-hidden="true">↗</span></a>
+</div></header>
+<main>
+<section class="hero" aria-labelledby="title">
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> CATÁLOGO DE TRAJES</p>
+      <h1 id="title">Loja de<br><em>Folhas de Ouro</em></h1>
+      <p class="intro">Explore os trajes do Naruto Shinobi Universe e abra as fotos para ver cada detalhe.</p>
+      <a class="cta" href="#catalogo">Explorar catálogo <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="hero-photo"><img src="fotos/apoio-developer/52-mini.jpg" alt="" fetchpriority="high"></div>
+      <div class="hero-stamp">忍</div>
+      <div class="hero-caption"><span>✦</span> Naruto Yakuza</div>
+    </div>
+  </div>
+</section>
+<section class="wrap catalog" id="catalogo" aria-labelledby="heading">
+  <div class="catalog-head">
+    <h2 id="heading">Trajes da loja</h2>
+    <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar traje pelo nome…" aria-label="Buscar traje pelo nome"></label>
+  </div>
+  <div class="toolbar">
+    <div class="filters" role="group" aria-label="Filtrar categoria">
+      <button data-category="todos" aria-pressed="true">Todos <small>91</small></button>
+      <button data-category="fixas" aria-pressed="false">Fixas <small>12</small></button>
+      <button data-category="apoio-developer" aria-pressed="false">Apoio Developer <small>79</small></button>
+    </div>
+    <p id="count" role="status"></p>
+  </div>
+  <div id="collections"></div>
+  <noscript>Ative o JavaScript para consultar o catálogo.</noscript>
+</section>
+</main>
+<footer class="wrap footer"><span>✦ &nbsp; Naruto Shinobi Universe</span><a href="#topo">Voltar ao topo ↑</a></footer>
+<dialog id="viewer" aria-labelledby="photo-title">
+  <div class="viewer-head"><div><p id="photo-category"></p><h2 id="photo-title"></h2></div><button id="close" aria-label="Fechar visualização" autofocus>×</button></div>
+  <img id="photo" alt="">
+  <div class="viewer-controls"><button id="previous" aria-label="Traje anterior">←</button><span id="position" aria-live="polite"></span><button id="next" aria-label="Próximo traje">→</button></div>
+</dialog>
+</body>
+</html>
